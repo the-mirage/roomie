@@ -1,1 +1,53 @@
 @import "tailwindcss";
+
+:root {
+  --font-body: "Poppins", sans-serif;
+  --font-decorative: "Dancing Script", cursive;
+  --font-primary: "Raleway", sans-serif;
+  --font-secondary: "Mulish", sans-serif;
+
+  --color-primary: #7c6a46;
+  --color-light: #ffffff;
+  --color-secondary: #fafafa;
+}
+body {
+  font-family: var(--font-body);
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-family: var(--font-secondary);
+}
+h2,
+h3 {
+  font-family: var(--font-primary);
+}
+
+.bg-color-primary {
+  background-color: var(--color-primary);
+}
+.bg-color-secondary {
+  background-color: var(--color-secondary);
+}
+.bg-color-light {
+  background-color: var(--color-light);
+}
+
+.color-light {
+  color: var(--color-light);
+}
+.color-primary {
+  color: var(--color-primary);
+}
+.font-decorative {
+  font-family: var(--font-decorative);
+}
+.font-secondary {
+  font-family: var(--font-secondary);
+}
+.font-primary {
+  font-family: var(--font-primary);
+}
+.font-body {
+  font-family: var(--font-body);
+}
