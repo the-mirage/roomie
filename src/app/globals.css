@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 :root {
   --font-body: "Poppins", sans-serif;
@@ -9,6 +10,8 @@
   --color-primary: #7c6a46;
   --color-light: #ffffff;
   --color-secondary: #fafafa;
+  --color-tertiary: #ffac98;
+  --color-shade: #b0b0b0;
 }
 body {
   font-family: var(--font-body);
@@ -23,15 +26,24 @@ h3 {
   font-family: var(--font-primary);
 }
 
+/* Background colors */
 .bg-color-primary {
   background-color: var(--color-primary);
 }
 .bg-color-secondary {
   background-color: var(--color-secondary);
 }
+.bg-color-tertiary {
+  background-color: var(--color-tertiary);
+}
 .bg-color-light {
   background-color: var(--color-light);
 }
+.bg-color-shade {
+  background-color: var(--color-shade);
+}
+
+/* Text Color */
 
 .color-light {
   color: var(--color-light);
@@ -39,6 +51,14 @@ h3 {
 .color-primary {
   color: var(--color-primary);
 }
+.color-tertiary {
+  color: var(--color-tertiary);
+}
+.color-primary {
+  color: var(--color-primary);
+}
+
+/* Font styles */
 .font-decorative {
   font-family: var(--font-decorative);
 }

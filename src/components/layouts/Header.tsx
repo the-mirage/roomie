@@ -1,10 +1,11 @@
 import Image from "next/image";
 import logo from "@/../public/images/logo.svg";
 import Link from "next/link";
+import { Button } from "../common";
 
 const Header = () => {
   return (
-    <nav className="mb-8 mx-0 py-6 bg-color-secondary">
+    <nav className="mx-0 py-6 bg-color-secondary">
       <div className="flex items-center justify-between lg:px-20 md:px-16 px-6">
         <div className="">
           <Image src={logo} alt="logo" />
@@ -17,24 +18,22 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link href="/">Explore</Link>
+              <Link href="/explore">Explore</Link>
             </li>
             <li>
-              <Link href="/">Rooms</Link>
+              <Link href="/rooms">Rooms</Link>
             </li>
             <li>
-              <Link href="/">About</Link>
+              <Link href="/about">About</Link>
             </li>
             <li>
-              <Link href="/">Contact</Link>
+              <Link href="/contact">Contact</Link>
             </li>
           </ul>
         </div>
-        <div className="font-body lg:text-[18px] text-[15px]">
-          <button className="bg-color-primary color-light px-6 py-2 rounded-md text-center">
-            Book Now
-          </button>
-        </div>
+        <Button variants="primary" size="medium">
+          Book Now
+        </Button>
       </div>
     </nav>
   );
