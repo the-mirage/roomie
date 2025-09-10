@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/forms";
 
 :root {
   --font-body: "Poppins", sans-serif;
@@ -55,6 +56,11 @@ h3 {
   color: var(--color-tertiary);
 }
 .color-primary {
+  color: var(--color-primary);
+}
+
+/* Border Color */
+.border-color-primary {
   color: var(--color-primary);
 }
 

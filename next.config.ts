@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   images: {
     domains: ["unsplash.com", "images.unsplash.com"],
   },
+  productionBrowserSourceMaps: true,
 };
 
 export default nextConfig;
