@@ -3,7 +3,7 @@ import React from "react";
 
 const Map = () => {
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: "AIzaSyC4C_2Ux9XXdXYzo68r5wAweZ072wDlmkc",
+    googleMapsApiKey: "GOOGLE_MAPS_API_KEYS", // Fix with the actual environment variable
   });
   if (!isLoaded)
     return (
